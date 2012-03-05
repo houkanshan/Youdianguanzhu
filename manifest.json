@@ -1,0 +1,27 @@
+{
+  "name":"YouDianGuanZhu",
+    "version": "1.0",
+    "description":"The Test of YouDianGuanZhu",
+    "browser_action": {
+      "default_title": "YouDianGuanZhu",
+      "default_icon": "icons/icon48.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon48.png",
+      "48": "icons/icon48.png"
+    },
+    "content_scripts":[{
+        "js": ["scripts/sessions.js"],
+        "matches":["http://graph.renren.com/oauth/login_success.html*", "https://graph.renren.com/oauth/login_success.html*"]
+        }],
+    "options_page": "options.html",
+    "permissions": [
+      "notifications", 
+      "http://*/*", 
+      "https://*/*",
+      "unlimitedStorage"
+      ],
+    "background_page": "background.html"
+}

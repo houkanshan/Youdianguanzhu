@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src='/scripts/jquery-1.7.1.js'></script>
+		<script type="text/javascript" src='/scripts/MD5.js'></script>
+		<script type="text/javascript" src='/scripts/api.js'></script>
+		<script type="text/javascript" src='/scripts/background.js'></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var i = true;
+			function changeIcon (){
+				if(i){
+					chrome.browserAction.setIcon({path:"/icon.png"});
+				}else{
+					chrome.browserAction.setIcon({path:"/icons/icon128.png"});
+				}
+				i = !i;
+				setTimeout(changeIcon, 2000);
+			}
+
+changeIcon();
+</script>
+
+	</body>
+</html>
