@@ -1,4 +1,4 @@
-var RR = {
+var ydgz_RR = {
 	api_id: "181603",
 	api_key: "e708351375cc43409b434c9b8234cdfc",
 	URL: {
@@ -7,13 +7,13 @@ var RR = {
 		redirectUrl: "http://graph.renren.com/oauth/login_success.html"
 	},
 	token: function() {
-					 if (localStorage.rr_access_token 
-							 && localStorage.rr_access_token != "false" 
-							 && localStorage.rr_access_token != "undefinied" 
-							 && localStorage.rr_token_expire 
-							 && localStorage.rr_token_expire != 0 
-							 && localStorage.rr_token_expire > Date.now()) {
-						 return localStorage.rr_access_token;
+					 if (localStorage.ydgz_rr_token 
+							 && localStorage.ydgz_rr_token != "false" 
+							 && localStorage.ydgz_rr_token != "undefinied" 
+							 && localStorage.ydgz_rr_token_expire 
+							 && localStorage.ydgz_rr_token_expire != 0 
+							 && localStorage.ydgz_rr_token_expire > Date.now()) {
+						 return localStorage.ydgz_rr_token;
 					 } else {
 						 return false;
 					 }
@@ -64,11 +64,11 @@ var RR = {
 					 url += "&" + order[i] + "=" + encodeURIComponent(options[order[i]]);
 				 }
 				 url += "&sig=" + sig;
-				 if (document.getElementById("loader")) {
-					 document.getElementById("loader").style.display = "block";
-				 } else {
-					 console.log("Error in getElementByID: 'loader'");
-				 }
+				 //if (document.getElementById("loader")) {
+					 //document.getElementById("loader").style.display = "block";
+				 //} else {
+					 //console.log("Error in getElementByID: 'loader'");
+				 //}
 				 //ajax开始
 				 var xhr = new XMLHttpRequest();
 				 //url = this.URL.api+'?'
