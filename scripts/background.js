@@ -1,7 +1,8 @@
 /*===== addListener ======*/
 
 chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
-	if(request.isYouDianGuanZhu){
+	if(request.isYouDianGuanZhu &&  localStorage.isRequest){
+		localStorage.removeItem('isRequest');
 		console.log('[debug]token: '+request.token);
 		try{
 			var params = (function(token){
@@ -37,7 +38,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 		}
 		//RenrenChrome will close the window, an extension will be catched
 		//test if is ok
-		endResponse({});
+		sendResponse({});
 	}
 	console.log("success in background");
 	return {};
@@ -76,38 +77,38 @@ if(ydgz_RR.token()){
 
 
 
-//check hr page;
-var refreshCnt = 0;
-var isFirst = true;
+////check hr page;
+//var refreshCnt = 0;
+//var isFirst = true;
 
 
-function startReq(){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET", "http://hr.dian.org.cn", false);
-	xhr.onreadystatechange = function(){
-		//4为加载完成
-		if(xhr.readyState == 4){
-			refreshCnt++;			
-			var stat = xhr.status;
-			console.log('['+refreshCnt+']'+ stat);
-			if(stat == 200){
-				if(isFirst){
-					window.open("http://hr.dian.org.cn");
-					//sendOk(stat);
-					isFirst = false;
+//function startReq(){
+	//var xhr = new XMLHttpRequest();
+	//xhr.open("GET", "http://hr.dian.org.cn", false);
+	//xhr.onreadystatechange = function(){
+		////4为加载完成
+		//if(xhr.readyState == 4){
+			//refreshCnt++;			
+			//var stat = xhr.status;
+			//console.log('['+refreshCnt+']'+ stat);
+			//if(stat == 200){
+				//if(isFirst){
+					//window.open("http://hr.dian.org.cn");
+					////sendOk(stat);
+					//isFirst = false;
+					////console.log('['+refreshCnt+']'+ stat);
+				//}
+			//}else{
+				//window.open("http://hr.dian.org.cn");
+				//if(!isFirst){
+					//isFirst = true;
+					////sendFailed(stat);
 					//console.log('['+refreshCnt+']'+ stat);
-				}
-			}else{
-				window.open("http://hr.dian.org.cn");
-				if(!isFirst){
-					isFirst = true;
-					//sendFailed(stat);
-					console.log('['+refreshCnt+']'+ stat);
-				}
-			}
-		}
-	};
-	xhr.send();
-}
+				//}
+			//}
+		//}
+	//};
+	//xhr.send();
+//}
 
-setInterval(startReq, 2000);
+//setInterval(startReq, 2000);

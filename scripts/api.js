@@ -36,6 +36,7 @@ var ydgz_RR = {
 					 p += ', toolbar=no, scrollbars=no, menubar=no, location=no, resizable=no';
 					 //第二个参数设置页面名称
 					 window.open(url, "Renren connection", p);
+					 localStorage.isRequest = true;
 				 },
 	logout: function(callback) {
 						//作为需要使用全局变量的东西使用回调
@@ -48,7 +49,6 @@ var ydgz_RR = {
 				 options["call_id"] = Date.now();
 				 var order = [];
 				 for (var key in options) {
-					 //放了一些数字量进去
 					 order.push(key);
 				 }
 				 order.sort();
