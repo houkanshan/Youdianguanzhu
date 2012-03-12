@@ -1,4 +1,6 @@
 window.onload = function(){
+	var yourId;
+	
 	ydgz_RR.api({"method":"users.getLoggedInUser"}, function(res){
 		if(!res.error_code){
 			localStorage.userId = res.uid;
