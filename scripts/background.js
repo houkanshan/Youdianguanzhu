@@ -45,13 +45,9 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 });
 
 //onclick listener
-chrome.browserAction.onClicked.addListener(function(){
-	if(!ydgz_RR.token()){
-		console.log("token failed");
-		chrome.browserAction.setPopup({"popup":""});
-		ydgz_RR.login();
-	}
-});
+// chrome.browserAction.onClicked.addListener(function(){
+
+// });
 
 
 
@@ -72,7 +68,7 @@ if(ydgz_RR.token()){
 	console.log("token succes");
 	chrome.browserAction.setPopup({"popup":"/popup.html"});
 }else{
-	chrome.browserAction.setPopup({"popup":""});
+	chrome.browserAction.setPopup({"popup":"/login.html"});
 }
 
 

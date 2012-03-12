@@ -1,7 +1,7 @@
 chrome.extension.sendRequest(
 	{isYouDianGuanZhu: true, token: window.location.hash},
 	function(response){
-			alert('success');
+			// alert('success');
 			window.close();
 		}
 );
