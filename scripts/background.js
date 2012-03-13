@@ -27,7 +27,10 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 
 			if (localStorage.ydgz_rr_token && localStorage.ydgz_rr_token != 'false'){
 				console.log('[info] auth done');
-				chrome.browserAction.setPopup({'popup':'/popup.html'});
+				// chrome.browserAction.setPopup({'popup':'/popup.html'});
+				window.open('/options.html');
+				
+				// chrome.extension.sendRequest({isLogined:true});
 				//window.open(chrome.extension.getURL('')
 			}
 
@@ -40,7 +43,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 		//test if is ok
 		sendResponse({});
 	}
-	console.log("success in background");
+	console.log("background run finished");
 	return {};
 });
 
