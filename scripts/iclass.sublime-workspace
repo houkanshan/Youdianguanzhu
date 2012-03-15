@@ -1,0 +1,463 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"player",
+				"players"
+			],
+			[
+				"web",
+				"webkit-box-shadow"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/public/js/indexnew.js",
+			"settings":
+			{
+				"buffer_size": 5708,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/app.js",
+			"settings":
+			{
+				"buffer_size": 28018,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/indexnew.ejs",
+			"settings":
+			{
+				"buffer_size": 1727,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/index.ejs",
+			"settings":
+			{
+				"buffer_size": 4669,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/routes/test.js",
+			"settings":
+			{
+				"buffer_size": 124,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 96.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"nodejs",
+				"Nodejs::User File Settings"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jslint",
+				"Preferences: JSLint Settings – Default"
+			],
+			[
+				"jsl",
+				"JSLint: Show JSLint Result"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			]
+		],
+		"width": 463.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/playing.ejs",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/public/js/room.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/public/js/playing.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/routes/room.js",
+		"/home/houkanshan/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/layout.ejs",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/question.ejs",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/public/js/question.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/routes/playing.js",
+		"/home/houkanshan/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/houkanshan/.config/sublime-text-2/Packages/User/Nodejs.sublime-settings",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/room.ejs",
+		"/home/houkanshan/.config/sublime-text-2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
+		"/home/houkanshan/.config/sublime-text-2/Packages/User/sublime-jslint.sublime-settings",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/routes/test.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/public/js/timer.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/routes/index.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/question.html",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/node_modules/express/node_modules/connect/lib/middleware/router.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/node_modules/express/lib/router/route.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/app.js",
+		"/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/addFriend.ejs",
+		"/home/houkanshan/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/houkanshan/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/houkanshan/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/houkanshan/studio/html/chromeExt/Youdianguanzhu/popup.html",
+		"/home/houkanshan/studio/html/chromeExt/Youdianguanzhu/scripts/background.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"j",
+			"i",
+			"$",
+			"select",
+			"vertial",
+			"hide_overlay",
+			"hide_overlay\"",
+			"hide_overlay",
+			" '<div id=\"rank\">'\n        + '<h2 class=\"top\">成绩单</h2>'\n        + '<div class=\"lines\"> '\n        + '<ul>'\n        + '<li class=\"rank1\"><span></span><span class=\"score\"></span></li>'\n        + '<li class=\"rank2\"><span></span><span class=\"score\"></span></li>'\n        + '<li class=\"rank3\"><span></span><span class=\"score\"></span></li>'\n        + '<a href=\"/\" title=\"确定\">确定</a>'\n        + '</ul>'\n        + '<div class=\"tree\"></div>'\n        + '<div> '\n        + '</div>'\n        + '</div>'\n        + '</div>';",
+			"each",
+			"$",
+			"allReady",
+			"start",
+			"i",
+			"true",
+			"line",
+			"auto_complete",
+			"backspace",
+			"auto_complete",
+			"backspace",
+			"light"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			" +",
+			"' +",
+			"' +$",
+			"' +"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/public/js/indexnew.js",
+					"settings":
+					{
+						"buffer_size": 5708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								612,
+								612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/app.js",
+					"settings":
+					{
+						"buffer_size": 28018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2281,
+								2281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 852.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/indexnew.ejs",
+					"settings":
+					{
+						"buffer_size": 1727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								445,
+								445
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/views/index.ejs",
+					"settings":
+					{
+						"buffer_size": 4669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/houkanshan/studio/html5/code/happy/trunk/iclass/routes/test.js",
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"indexnew",
+				"public/js/indexnew.js"
+			],
+			[
+				"playingejs",
+				"views/playing.ejs"
+			],
+			[
+				"indexejs",
+				"views/index.ejs"
+			],
+			[
+				"test",
+				"routes/test.js"
+			],
+			[
+				"room",
+				"routes/room.js"
+			],
+			[
+				"playing.e",
+				"views/playing.ejs"
+			],
+			[
+				"playing.js",
+				"public/js/playing.js"
+			],
+			[
+				"public/js/play",
+				"public/js/playing.js"
+			],
+			[
+				"routes/play",
+				"routes/playing.js"
+			],
+			[
+				"index.js",
+				"routes/index.js"
+			],
+			[
+				"rou",
+				"node_modules/express/node_modules/connect/lib/middleware/router.js"
+			],
+			[
+				"route",
+				"node_modules/express/lib/router/route.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true
+}

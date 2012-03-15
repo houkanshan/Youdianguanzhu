@@ -24,8 +24,26 @@
 			</div>
 			<!-- user setting -->
 			<div id="user" class="content">
-				<h1>test</h1>
-				<input id="searchSort" type="text" placeholder="输入好友名字" onkeyup="searchFriends(this)">
+				<form action="javascript:void(0);">
+					<input id="searchSort" type="text" placeholder="输入好友名字" onkeyup="searchFriends(this)">
+					<button type="submit">Find you</button>
+				</form>
+				<div id="friend_list">
+					<ul>
+						<li>
+							<a class="head" href="#">
+								<img class="head" src="icon.png" alt="head">
+							</a>
+							<a class="name" href="#">houmai</a>
+						</li>
+						<li>
+							<a class="head" href="">
+								<img class="head" src="icon.png" alt="head">
+							</a>
+							<a class="name" href="#">houmai</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

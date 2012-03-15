@@ -6,16 +6,13 @@ body{
 
 #wrapper{
 	width: 400px;
-	height: 600px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 #menu{
 	padding-left: 14px;
-	line-height: 35px;
 	clear:both;
-	margin-bottom: 00px;
 }
 #menu li{
 	float: left;
@@ -24,6 +21,7 @@ body{
 
 #menu li a{
 	font-size: 18px;
+	line-height: 35px;
 	color: white;
 	opacity: 0.5;
     -webkit-transition: opacity .3s;
@@ -33,4 +31,37 @@ body{
 #menu li a:hover,
 #menu li a.cur_tab{
 	opacity: 1;
+}
+
+#user{
+	margin: 10px;
+}
+
+input{
+	border:1px solid gray;
+	height: 29px;
+}
+
+button{
+	height: 29px;
+	display: inline;
+}
+
+
+/* friends list */
+#friend_list{
+	margin: 10px 0 0 0;
+}
+#friend_list li{
+	float:left;
+	width: 100%;
+}
+#friend_list .head{
+	height:50px;
+	width:50px;
+	float: left;
+}
+#friend_list .name{
+	float:left;
+	color: #369;
 }
