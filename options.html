@@ -5,10 +5,31 @@
 	<title>有点关注-选项</title>
     <script type="text/javascript" src="scripts/MD5.js"></script>
     <script type="text/javascript" src="scripts/api.js"></script>
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/option.css">
 </head>
 <body>
+	<div id="wrapper">
+		<header>
+			<h1>YoudianGuanzhu-Option</h1>
+		</header>
+		<div id="main">
+			<div id="menu">
+				<ul>
+					<li><a href="javascript:" class="cur_tab">User</a></li>	
+					<li><a href="javascript:">Theme</a></li>	
+					<li><a href="javascript:">About</a></li>	
+				</ul>
+			</div>
+			<!-- user setting -->
+			<div id="user" class="content">
+				<h1>test</h1>
+				<input id="searchSort" type="text" placeholder="输入好友名字" onkeyup="searchFriends(this)">
+			</div>
+		</div>
+	</div>
 	<div id='test'>options</div>
     <script type="text/javascript" src="scripts/options.js"></script>
-    <input id="searchSort" type="text" placeholder="输入好友名字" onkeyup="searchFriends(this)">
 </body>
 </html>

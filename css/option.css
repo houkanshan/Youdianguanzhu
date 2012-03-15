@@ -1,0 +1,36 @@
+html,
+body{
+	width: auto;
+	height: 100%;
+}
+
+#wrapper{
+	width: 400px;
+	height: 600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#menu{
+	padding-left: 14px;
+	line-height: 35px;
+	clear:both;
+	margin-bottom: 00px;
+}
+#menu li{
+	float: left;
+	margin-right: 28px;
+}
+
+#menu li a{
+	font-size: 18px;
+	color: white;
+	opacity: 0.5;
+    -webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+#menu li a:hover,
+#menu li a.cur_tab{
+	opacity: 1;
+}
