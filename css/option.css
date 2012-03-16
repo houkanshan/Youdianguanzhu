@@ -39,7 +39,7 @@ body{
 
 input{
 	border:1px solid gray;
-	height: 29px;
+	height: 27px;
 }
 
 button{
@@ -52,16 +52,36 @@ button{
 #friend_list{
 	margin: 10px 0 0 0;
 }
-#friend_list li{
-	float:left;
-	width: 100%;
+#friend_list{
+	max-height: 485px;
+	overflow: auto;
 }
-#friend_list .head{
+#friend_list li{
+	width: 100%;
+	overflow: hidden;
+}
+#friend_list li:last-child{
+	margin-bottom: 0;
+}
+
+#friend_list li a{
+	float:left;
+	width:100%;
+}
+
+#friend_list li a:hover{
+	background: #F1F4FA;
+}
+
+#friend_list img.head{
 	height:50px;
 	width:50px;
 	float: left;
+	margin: 5px;
 }
 #friend_list .name{
 	float:left;
 	color: #369;
+	padding-top: 8px;
+	font-weight:bold;
 }

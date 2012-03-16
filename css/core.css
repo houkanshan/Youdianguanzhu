@@ -63,6 +63,11 @@ input,textarea,select {
 }
 
 /*clear*/
+
+.clear{
+     clear:both;
+}
+
 html body div.clear,
 html body span.clear
 {

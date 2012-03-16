@@ -4,13 +4,13 @@ putFriend = function(friend){
 
 searchFriends = function(input){
     var text = input.value.replace(/[\(\)\[\]\{\}\?\*\.\+\$\^\\\| ]/g, '');
+    var ul = document.getElementById('friend_list').getElementsByTagName('ul')[0];
+    ul.innerHTML = "";
     if(!text){return;}
     var allFriends = JSON.parse(localStorage.friends);
     var matchFriends = [];
     var reg = new RegExp(text);
 
-    var ul = document.getElementById('friend_list').getElementsByTagName('ul')[0];
-    ul.innerHTML = "";
     for (var i in allFriends){
         try{
             if (allFriends[i].name.match(text)){
@@ -22,24 +22,33 @@ searchFriends = function(input){
     }
     // var out = JSON.stringify(matchFriends);
     for(var j in matchFriends){
+        var thisFriend = matchFriends[j];
         var li =
-        '<li>'+
-            '<a class="head" href="#">'+
+        '<li class="clear">'+
+            '<a href="javascript:" onClick="" data-id="'+thisFriend.id+'">'+
                 '<img class="head" src="'+
-                matchFriends[j].tinyurl+
+                thisFriend.tinyurl+
                 '" alt="head">'+
-            '</a>'+
-            '<a class="name" href="#">'+
-            matchFriends[j].name+
+                '<span class="name" href="#">'+
+                thisFriend.name+
+                '</span>'+
             '</a>'+
         '</li>';
         ul.innerHTML += li;
-        console.log(li);
+        // console.log(li);
     }
 
 };
 
+setYou = function(){
+    localStorage.yourId = this.getAttribute("data-id");
+    if (localStorage && localStorage !== ""){
+        
+    }
+};
+
 window.onload = function(){
+    document.getElementById('friend_list').style.maxHeight = (window.screen.availHeight - 200)+'px';
     if(!localStorage.friends){
         ydgz_RR.api({
             'method': 'friends.getFriends',
@@ -48,7 +57,6 @@ window.onload = function(){
             if(!res.err_code){
                 localStorage.friends = JSON.stringify(res);
                 console.log('[debug]getFrients:'+ res);
-                // document.getElementById('test').innerHTML = JSON.stringify(res);
             }else{
                 console.log('[err]getFrients:'+res.error_msg);
             }
