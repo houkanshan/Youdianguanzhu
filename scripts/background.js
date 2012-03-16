@@ -20,7 +20,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 				//"#access_token=140612%7C6.f9763505d3d5bd01c17e7b911b7b82f1.2592000.1333566000-326358287&expires_in=2592393&scope=read_user_message+write_guestbook+send_request+admin_page+send_message+deal_request+read_user_notification+send_invitation+read_user_badge+publish_blog+create_album+read_user_guestbook+read_user_like_history+email+read_user_invitation+read_user_request+read_user_status+read_user_status+read_user_blog+read_user_feed+read_user_share+read_user_photo+read_user_album+read_user_checkin+read_user_comment+publish_feed+publish_share+publish_checkin+publish_comment+status_update+photo_upload+operate_like"
 			})(request.token.substr(1).split('&'));
 
-			var timeExpired = Date.now() + 1000*parseInt(params['expires_in']);
+			var timeExpired = Date.now() + 1000*parseInt(params['expires_in'], 10);
 
 			localStorage.ydgz_rr_token = params['access_token'];
 			localStorage.ydgz_rr_token_expire = timeExpired.toString();
@@ -29,7 +29,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 				console.log('[info] auth done');
 				// chrome.browserAction.setPopup({'popup':'/popup.html'});
 				window.open('/options.html');
-				
+
 				// chrome.extension.sendRequest({isLogined:true});
 				//window.open(chrome.extension.getURL('')
 			}
@@ -87,7 +87,7 @@ if(ydgz_RR.token()){
 	//xhr.onreadystatechange = function(){
 		////4为加载完成
 		//if(xhr.readyState == 4){
-			//refreshCnt++;			
+			//refreshCnt++;
 			//var stat = xhr.status;
 			//console.log('['+refreshCnt+']'+ stat);
 			//if(stat == 200){

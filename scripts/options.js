@@ -1,3 +1,15 @@
+setTab = {
+    'user' : function(){
+        if(localStorage.yourId && localStorage !== ""){
+            // you have been setted
+        }else{
+            // to been setted
+        }
+    }
+};
+
+
+
 putFriend = function(friend){
     getElementById();
 };
@@ -25,7 +37,7 @@ searchFriends = function(input){
         var thisFriend = matchFriends[j];
         var li =
         '<li class="clear">'+
-            '<a href="javascript:" onClick="" data-id="'+thisFriend.id+'">'+
+            '<a href="javascript:" onClick="setYou(this);" data-id="'+thisFriend.id+'">'+
                 '<img class="head" src="'+
                 thisFriend.tinyurl+
                 '" alt="head">'+
@@ -40,10 +52,12 @@ searchFriends = function(input){
 
 };
 
-setYou = function(){
-    localStorage.yourId = this.getAttribute("data-id");
+setYou = function(e){
+    localStorage.yourId = e.getAttribute("data-id");
+    console.log(localStorage.yourId+'is being setted');
     if (localStorage && localStorage !== ""){
-        
+        chrome.browserAction.setPopup({'popup':'/popup.html'});
+
     }
 };
 
