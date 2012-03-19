@@ -6,7 +6,7 @@
     <script type="text/javascript" src="scripts/MD5.js"></script>
     <script type="text/javascript" src="scripts/api.js"></script>
     <link rel="stylesheet" href="css/core.css">
-    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/dark.css">
     <link rel="stylesheet" href="css/option.css">
 </head>
 <body>
@@ -17,17 +17,18 @@
 		<div id="main">
 			<div id="menu">
 				<ul>
-					<li><a href="javascript:" class="cur_tab">User</a></li>
-					<li><a href="javascript:">Theme</a></li>
-					<li><a href="javascript:">About</a></li>
+					<li><a href="javascript:void(0);" class="cur_tab">User</a></li>
+					<li><a href="javascript:void(0);">Theme</a></li>
+					<li><a href="javascript:void(0);">About</a></li>
 				</ul>
 			</div>
 			<!-- user setting -->
 			<div id="user" class="content">
-				<form action="javascript:void(0);">
+
+				<div id="input">
 					<input id="searchSort" type="text" placeholder="输入好友名字" onkeyup="searchFriends(this)">
-					<button type="submit">Find you</button>
-				</form>
+					<!-- <button type="submit">Find you</button> -->
+				</div>
 				<div id="friend_list">
 					<ul></ul>
 				</div>

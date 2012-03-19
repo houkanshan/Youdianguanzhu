@@ -4,7 +4,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 	if(request.isYouDianGuanZhu &&  localStorage.isRequest){
 		localStorage.removeItem('isRequest');
 		console.log('[debug]token: '+request.token);
-		try{
+		try{.
 			var params = (function(token){
 				if (token == ""){return{};}
 				var params = {};
@@ -69,7 +69,9 @@ if(!localStorage.firstRun || localStorage.firstRun === 'true'){
 }
 if(ydgz_RR.token()){
 	console.log("token succes");
-	chrome.browserAction.setPopup({"popup":"/popup.html"});
+	chrome.browserAction.setPopup({
+		"popup":"/popup.html"
+	});
 }else{
 	chrome.browserAction.setPopup({"popup":"/login.html"});
 }
