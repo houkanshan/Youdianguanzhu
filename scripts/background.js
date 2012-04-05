@@ -4,7 +4,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 	if(request.isYouDianGuanZhu &&  localStorage.isRequest){
 		localStorage.removeItem('isRequest');
 		console.log('[debug]token: '+request.token);
-		try{.
+		try{
 			var params = (function(token){
 				if (token == ""){return{};}
 				var params = {};

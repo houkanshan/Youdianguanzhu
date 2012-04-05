@@ -1,3 +1,4 @@
+/* reset */
 html {
      color:#000;
      background:#FFF;
@@ -61,6 +62,7 @@ input,textarea,select {
 input,textarea,select {
      font-size:100%;
 }
+/* end reset */
 
 /*clear*/
 
@@ -84,3 +86,4 @@ html body span.clear
      width: 0;
      height: 0;
 }
+/* end clear */
