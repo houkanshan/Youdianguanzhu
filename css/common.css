@@ -1,0 +1,95 @@
+html, body{
+	width:296px;
+	height:390px;
+}
+
+header{
+	height: 24px;
+	text-align:center;
+	margin-bottom: 12px;
+}
+
+.weather{
+	line-height:24px;
+	display: inline;
+}
+
+#slide{
+	height: 300px;
+	position: relative;
+}
+
+article{
+	width: 200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+article .head{
+	height: 50px;
+	width: 50px;
+	padding: 6px;
+	margin: 0 auto 12px auto;
+	display:block;
+}
+
+article .text{
+	/*need some style??*/
+	text-align: justify;
+	display: inline-block;
+}
+
+/* long text*/
+article.long{
+	display: -webkit-box;
+	-webkit-box-align: center;
+}
+article.long .head{
+	display: none;
+}
+/* end long text */
+
+article .pubtime{
+	display: block;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 8px;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	display:block;
+	bottom: 0;
+}
+
+footer .like{
+	display: block;
+	margin: 8px auto;
+	height: 38px;
+	width: 38px;
+	border: 1px solid black;
+	border-radius: 19px;
+}
+
+#control{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#control button{
+	position: absolute;
+	width:20px;
+	top: 0;
+}
+
+#control .prev{
+	left: 0px;
+}
+
+#control .next{
+	right: 0px;
+}
