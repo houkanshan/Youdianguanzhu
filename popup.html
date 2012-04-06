@@ -4,19 +4,32 @@
 	<meta charset="UTF-8">
 	<title>Youdianguanzhu</title>
 	<link rel="stylesheet" href="/css/core.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/light.css">
 </head>
 <body>
 	<header>
-		<span id="weather">dalian:rain snow 5`C</span>
-		<table id="setting"></table>
+		<span class="weather">dalian:rain snow 5`C</span>
+		<table class="setting"></table>
 	</header>
 
-	<article>
-		<img id="head" src="" alt="head" >
-		<p>i just wanna to see you, just see you...</p>
-		<span>3min before</span>
-	</article>
+	<div id="slide">
+		<div id="control">
+			<button class="prev">‹</button>
+			<button class="next">›</button>
+		</div>
+		<article class="long">
+			<img class="head" src="http://img3.douban.com/icon/u49919791-32.jpg" alt="head" >
 
-	<footer><button id="like">like</button></footer>
+			<div class="text">
+				<p>i just wanna to see you, just see you...</p>
+			</div>
+
+			<span class="pubtime">3min before</span>
+		</article>
+	</div>
+
+
+	<footer><button class="like">like</button></footer>
 </body>
 </html>
